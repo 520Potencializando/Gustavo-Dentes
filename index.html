@@ -19,6 +19,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
         <link href="css2509d?family=Lato:wght@400;700;900&amp;display=swap" rel="stylesheet">
 
+    <script>
+    window.clickmagick_cmc = {
+        uid: '190843',
+        hid: '1099586768',
+        cmc_project: 'ProDentim',
+        vid_info: 'on',
+    }
+</script>
+<script src='//cdn.clkmc.com/cmc.js'></script>
+
         <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -28,11 +38,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'PIXEL');
+fbq('init', '1141494040533757');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=PIXEL&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=1141494040533757&ev=PageView&noscript=1"/>
 </noscript>
 
 
@@ -55,12 +65,12 @@ src="https://www.facebook.com/tr?id=PIXEL&ev=PageView&noscript=1"/>
                     <div class="row">
                         <div class="box-container">
                             <div class="col-md-12">
-                                <h2 class="first-head">Discover the Secret Revealed by Dr. Drew Sutton for <b>Perfect Oral Health: <a href="https://theprodentim.com/video.php?aff_id=719850"><span style="color: rgb(17 94 152);">Restoring Teeth, Rebuilding Gums, and Eliminating Bad Breath in Just 7 Seconds</span></a></b></h2>
+                                <h2 class="first-head">Discover the Secret Revealed by Dr. Drew Sutton for <b>Perfect Oral Health: <a href="https://theprodentim.com/video.php?aff_id=719850&subid=[cmc_vid]"><span style="color: rgb(17 94 152);">Restoring Teeth, Rebuilding Gums, and Eliminating Bad Breath in Just 7 Seconds</span></a></b></h2>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
 
-                                    <a href="https://theprodentim.com/video.php?aff_id=719850">
+                                    <a href="https://theprodentim.com/video.php?aff_id=719850&subid=[cmc_vid]">
                                         <img class="main fr-fic main-img" src="assets/img-01.png">
                                     </a>
 
@@ -89,12 +99,12 @@ src="https://www.facebook.com/tr?id=PIXEL&ev=PageView&noscript=1"/>
                                 <br>
                             </div>
                             <div class="col-md-12" style="margin-top:5px;">
-                                <a class="btn btn-default btn-style" href="https://theprodentim.com/video.php?aff_id=719850">Watch Video</a>
+                                <a class="btn btn-default btn-style" href="https://theprodentim.com/video.php?aff_id=719850&subid=[cmc_vid]">Watch Video</a>
                             </div>
                             
                                  <div class="row">
                                     <div class="col-md-12">
-                                        <a href="https://theprodentim.com/video.php?aff_id=719850" class="after-b"><p>This video is 100% FREE! Click here to start watching...</p></a>                                    
+                                        <a href="https://theprodentim.com/video.php?aff_id=719850&subid=[cmc_vid]" class="after-b"><p>This video is 100% FREE! Click here to start watching...</p></a>                                    
                                     </div>
                                 </div>
                            
@@ -154,5 +164,46 @@ src="https://www.facebook.com/tr?id=PIXEL&ev=PageView&noscript=1"/>
                 });
             });
         </script>
+
+        <script>
+  function eventoEngajamento(event) {
+
+    console.log("Evento de Engajamento Inicializado...");
+    
+    event.preventDefault();
+    
+    var urlDestino = event.currentTarget.href;
+
+    console.log("Evento Disparado com Sucesso!");
+    
+    var script = document.createElement("script");
+
+    script.innerHTML = "window.clickmagick_cmc = { uid: '190843', hid: '1099586768', cmc_project: 'ProDentim', cmc_goal: 'a', vid_info: 'on', cmc_ref: 'ic-click', }";
+    
+    document.head.appendChild(script);
+    
+    var script = document.createElement('script');
+
+    script.src = "//cdn.clkmc.com/cmc.js";
+
+    document.head.appendChild(script);
+    
+    setTimeout(function() {
+      console.log("Processamento de Evento de IC Realizado com Sucesso! Redirecionando...");
+
+      window.location.href = urlDestino;
+    }, 3000);
+  }
+  
+  var searchString = "https://theprodentim.com/video.php?aff_id=719850&subid=[cmc_vid]";
+
+  var links = document.querySelectorAll('a');
+  
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].href.includes(searchString)) {
+        links[i].addEventListener("click", eventoEngajamento);
+    }
+  }
+</script>
 </body>
 </html>

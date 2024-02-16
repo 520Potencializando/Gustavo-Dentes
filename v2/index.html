@@ -135,5 +135,35 @@ src="https://www.facebook.com/tr?id=2573134546200049&ev=PageView&noscript=1"/>
                 DISCLAIMER: The website's content is based upon the author's opinion and is provided an an "AS IS" and "AS AVAILABLE" basis. You should do your own research and confirm the information with other sources when searching for information regarding health issues and always review the information carefully with your professional health care provider before using any of the protocols presented on this website and/or in the product sold here. The author is not engaged in rendering medical or similar professional services or advice via this website , and the information provided is not intended to replace medical advice offered by a physician or other licensed health care provider.
             </p>
         </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const prefixes = ["pv/index.html"];
+
+                function getAllParams(url) {
+                    const urlObj = new URL(url);
+                    let paramString = "";
+
+                    // Iterando sobre todos os parâmetros da URL
+                    for (const [key, value] of urlObj.searchParams) {
+                        paramString += `${paramString ? '&' : ''}${key}=${value}`;
+                    }
+
+                    return paramString;
+                }
+
+                const links = document.querySelectorAll("a");
+
+                links.forEach(link => {
+                    const hasPrefix = prefixes.some(prefix => link.href.includes(prefix));
+                    if (hasPrefix) {
+                        const params = getAllParams(window.location.href);
+                        const separator = link.href.includes("?") ? "&" : "?";
+                        link.href += `${separator}${params}`;
+                    }
+                });
+            });
+        </script>
+
 </body>
 </html>
